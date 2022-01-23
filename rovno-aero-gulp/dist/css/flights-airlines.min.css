@@ -1,0 +1,180 @@
+.header {
+  color: #222;
+  backdrop-filter: none;
+  background-color: #fff;
+}
+.header__logo {
+  background-image: url(../img/logo-rivne-black.svg);
+}
+.header__language {
+  color: #222;
+}
+.header__menu {
+  border-top: 1px solid #eeeeee4d;
+  border-bottom: 1px solid #ff0000;
+}
+.header__menu.fixed {
+  background-color: #fff;
+}
+.header__link {
+  color: #222;
+}
+
+.header__list li:nth-child(3) .header__link {
+  position: relative;
+}
+.header__list li:nth-child(3) .header__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 7px 40px;
+  border-color: transparent transparent #ff0000 transparent;
+}
+
+@media (max-width: 1024px) {
+  .header__list li:nth-child(3) .header__link {
+    font-weight: bold;
+    position: relative;
+  }
+  .header__list li:nth-child(3) .header__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    width: 3px;
+    height: 90%;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    background: #ff0000;
+  }
+}
+.airlines__box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.airlines__left, .airlines__right {
+  flex: 1 1 49%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.airlines__card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  min-width: 350px;
+}
+.airlines__header {
+  color: #222;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+.airlines__header h2 {
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+.airlines__logo {
+  width: 150px;
+  min-height: 40px;
+  background-image: url(../img/image-loader.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+.airlines__logo img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.airlines__more, .airlines__less {
+  transition: all 0.5s;
+  width: 100%;
+  font-size: 0.975rem;
+  padding: 16px 32px;
+  color: #777;
+}
+.airlines__more .icon-arrr, .airlines__less .icon-arrr {
+  margin-left: 10px;
+  display: inline-block;
+  transform-origin: center;
+  transform: rotate(90deg);
+  font-size: 0.8125rem;
+}
+.airlines__more .icon-arrr::before, .airlines__less .icon-arrr::before {
+  padding-left: 5px;
+}
+.airlines__more .icon-arrl, .airlines__less .icon-arrl {
+  margin-left: 10px;
+  display: inline-block;
+  transform-origin: center;
+  transform: rotate(90deg);
+  font-size: 0.8125rem;
+}
+.airlines__more .icon-arrl::before, .airlines__less .icon-arrl::before {
+  padding-left: 5px;
+}
+.airlines__less {
+  background-color: #dbdee640;
+}
+
+.airline {
+  visibility: hidden;
+  height: fit-content;
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 0.5s, max-height 1s;
+}
+.airline.more {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, max-height 1s;
+}
+.airline__box {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.airline__info {
+  flex: 1 1 48%;
+  font-size: 0.975rem;
+}
+.airline__info span {
+  margin-bottom: 5px;
+  color: #777;
+}
+.airline__info a {
+  margin-bottom: 5px;
+  text-decoration: underline;
+  color: #777;
+}
+.airline__title {
+  color: #222;
+  margin-bottom: 10px;
+}

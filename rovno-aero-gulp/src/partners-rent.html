@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "Partners-rent"
+})
+<link rel="stylesheet" href="css/partners-rent.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('html/header.html')
+        <!-- main -->
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li>
+                            <a href="/">Головна</a>
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Партнерам
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Оренда
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="partners-rent">
+                <div class="container">
+                    <h1 class="section-title">
+                        Оренда
+                    </h1>
+                    <p>
+                        Одеський аеропорт надає в оренду приміщення для створення об'єктів соціального призначення. Від
+                        кав'ярень та турагентств до орендарів ангарів на території — ми будемо раді співпраці з
+                        компаніями, які хочуть взяти участь у розвитку інфраструктури аеровокзального комплексу.
+                    </p>
+                    <p>
+                        Усі приміщення обладнані сучасними системами, у тому числі системою безпеки, охоронною та
+                        пожежною сигналізацією, відеоспостереженням, системою загального кондиціонування, вентиляції та
+                        опалення, а також каналізації та водопроводу.
+                    </p>
+                    <div class="info-form">
+                        <h2>
+                            Щоб отримати інформацію щодо оренди, заповніть форму, і ми з вами зв’яжемося
+                        </h2>
+                        @@include('html/contacts-form.html')
+                    </div>
+                </div>
+                <div class="section-spacer"></div>
+            </section>
+            <!-- Hover links -->
+            <div class="import">
+                <!-- Hover-links -->
+                @@include('html/hover-slider.html')
+            </div>
+        </main>
+        <!-- Footer -->
+        @@include('html/footer.html')
+
+</body>
+
+</html>

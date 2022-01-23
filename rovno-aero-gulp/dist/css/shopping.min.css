@@ -1,0 +1,131 @@
+.breadcrumbs {
+  color: #fff;
+}
+.breadcrumbs a {
+  color: #fff;
+}
+.breadcrumbs span::before {
+  color: #fff;
+}
+
+.section-title {
+  color: #fff;
+  padding-bottom: 100px;
+}
+
+.shopping__box {
+  padding-top: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.shopping-card {
+  flex: 1 1 48%;
+  min-width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.shopping-card__img {
+  flex: 1 1 50%;
+  min-width: 250px;
+  min-height: 270px;
+}
+.shopping-card__img img {
+  object-fit: cover;
+  object-position: center center;
+  object-position: left top;
+  width: 100%;
+  height: 100%;
+}
+.shopping-card__description {
+  flex: 1 1 50%;
+  padding: 24px;
+}
+.shopping-card__title {
+  color: #222;
+  padding-bottom: 24px;
+}
+.shopping-card__title span {
+  color: #777;
+  font-size: 0.975rem;
+  line-height: 1.125rem;
+}
+.shopping-card__title h2 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.shopping-card__schedule {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  padding: 16px 0;
+}
+.shopping-card__schedule span {
+  display: inline-block;
+}
+.shopping-card__location {
+  font-size: 0.975rem;
+  line-height: 1.125rem;
+  padding-top: 24px;
+}
+.shopping-card__location h3 {
+  margin-bottom: 10px;
+}
+.shopping-card__location span {
+  color: #777;
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    color: #fff;
+    padding-bottom: 190px;
+  }
+}
+.header__list li:nth-child(6) .header__link {
+  position: relative;
+}
+.header__list li:nth-child(6) .header__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 7px 40px;
+  border-color: transparent transparent #ff0000 transparent;
+}
+
+@media (max-width: 1024px) {
+  .header__list li:nth-child(6) .header__link {
+    font-weight: bold;
+    position: relative;
+  }
+  .header__list li:nth-child(6) .header__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    width: 3px;
+    height: 90%;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    background: #ff0000;
+  }
+}

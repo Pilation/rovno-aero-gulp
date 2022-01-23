@@ -1,0 +1,27 @@
+@import "_variables.scss";
+
+.header {
+    color: $grey;
+    backdrop-filter: none;
+    background-color: #fff;
+
+    &__logo {
+        background-image: url(../img/logo-rivne-black.svg);
+    }
+
+    &__language {
+        color: $grey;
+    }
+
+    &__menu {
+        border-top: 1px solid #eeeeee4d;
+        border-bottom: 1px solid $rivne-red;
+        &.fixed {
+            background-color: #fff;
+        }
+    }
+
+    &__link {
+        color: $grey;
+    }
+}

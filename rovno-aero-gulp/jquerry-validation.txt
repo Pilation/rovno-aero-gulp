@@ -1,0 +1,59 @@
+Index:
+Пример HTML формы:
+    <form id="loginform" action="" method="post">
+        <div>
+            Ваш логин:
+            <input type="text" name="login" />
+        </div>
+        <div>
+            Ваш пароль:
+            <input type="password" name="pswd" />
+        </div>
+        <div>
+            Ваш эмеил
+            <input type="email" name="email" />
+        </div>
+        <input type="submit" name="enter" value="Войти" />
+    </form>
+
+CSS:
+.error {
+    color: red;
+}
+
+JS:
+$(document).ready(function () {
+    $("#form-newsletter").validate({
+        rules: {
+            login: {
+                required: true,
+                minlength: 4,
+                maxlength: 16,
+            },
+            pswd: {
+                required: true,
+                minlength: 6,
+                maxlength: 16,
+            },
+            email: {
+                email: true,
+            }
+        },
+        messages: {
+            login: {
+                required: "Это поле обязательно для заполнения",
+                minlength: "Логин должен быть минимум 4 символа",
+                maxlength: "Максимальное число символов - 16",
+            },
+            pswd: {
+                required: "Это поле обязательно для заполнения",
+                minlength: "Пароль должен быть минимум 6 символа",
+                maxlength: "Пароль должен быть максимум 16 символов",
+            },
+            email: {
+                email: "Введите, пожалуйста, корерктный email"
+            }
+        }
+    });
+
+});

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "Vip-terminal"
+})
+<link rel="stylesheet" href="css/vip-terminal.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        @@include('html/header.html')
+        <div class="background">
+            <img data-src="./img/VIP-services-bg.jpg" class="lazy" alt="img">
+        </div>
+        <!-- main -->
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li>
+                            <a href="/">Головна</a>
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Послуги
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            VIP Послуги
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="vip-terminal">
+                <div class="container">
+                    <h1 class="section-title">VIP термінал</h1>
+                    <p class="vip-terminal__description">
+                        VIP-термінал аеропорту "Рівне" надає ексклюзивний сервіс, турбуючись про комфорт кожного
+                        пасажира і допомогаючи зробити подорож ще більш особливою.
+                    </p>
+                    <div class="vip-terminal__header">
+                        <h3 class="vip-terminal__small-title">Послуги VIP-терміналу:</h3>
+                        <div class="vip-terminal__row">
+                            <div class="vip-terminal__item">
+                                <span class="icon-passport"></span>
+                                <p>
+                                    індивідуальна реєстрація і пункт прикордонного та митного контролю;
+                                </p>
+                            </div>
+                            <div class="vip-terminal__item">
+                                <span class="icon-suitcase"></span>
+                                <p>
+                                    оформлення та доставка багажу до літака та відбір по прильоту;
+                                </p>
+                            </div>
+                            <div class="vip-terminal__item">
+                                <span class="icon-walking"></span>
+                                <p>
+                                    супровід пасажира до борту літака та назад до VIP-терміналу на окремому
+                                    транспорті;
+                                </p>
+                            </div>
+                            <div class="vip-terminal__item">
+                                <span class="icon-car"></span>
+                                <p>
+                                    вивантаження/завантаження багажу з/у автомобіль пасажира;
+                                </p>
+                            </div>
+                            <div class="vip-terminal__item">
+                                <span class="icon-parking"></span>
+                                <p>
+                                    паркувальні місця на час обслуговування.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-terminal__main">
+                        <div class="vip-terminal__also">
+                            <h3 class="vip-terminal__small-title">А також</h3>
+                            <div class="vip-terminal__column">
+                                <div class="vip-terminal__item">
+                                    <span class="icon-ticket"></span>
+                                    <p>
+                                        допомога у придбанні та бронюванні квитків;
+                                    </p>
+                                </div>
+                                <div class="vip-terminal__item">
+                                    <span class="icon-suitcase"></span>
+                                    <p>
+                                        пакування багажу (сплачується окремо);
+                                    </p>
+                                </div>
+                                <div class="vip-terminal__item">
+                                    <span class="icon-phone"></span>
+                                    <p>
+                                        місцеві та міжнародні дзвінки, факс, кольоровий ксерокс, сканер,
+                                        телебачення.
+                                    </p>
+                                </div>
+                                <div class="vip-terminal__item">
+                                    <span class="icon-wifi"></span>
+                                    <p>
+                                        безкоштовний високошвидкісний Wi-Fi;
+                                    </p>
+                                </div>
+                                <div class="vip-terminal__item">
+                                    <span class="icon-bed"></span>
+                                    <p>
+                                        замовлення готелю;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vip-terminal__order-service">
+                            <h2>Ви можете замовити послугу онлайн</h2>
+                            <span>Оберіть аеропорт для швидкого замовлення</span>
+                            <form action="#" class="select">
+                                <select>
+                                    <option selected value="Kyiv">
+                                        Kyiv (IEV)
+                                    </option>
+                                    <option value="Odessa">
+                                        Odessa (ODS)
+                                    </option>
+                                    <option value="Kharkiv">
+                                        Kharkiv (HRK)
+                                    </option>
+                                </select>
+                            </form>
+                            <h2>Ви можете замовити послугу онлайн</h2>
+                            <button type="button" class="grey-button red-button">VIP обслуговування</button>
+                            <button type="button" class="grey-button red-button">Бізнес зал</button>
+                        </div>
+                        <div class="vip-terminal__contacts">
+                            <h3 class="vip-terminal__small-title">а також</h3>
+                            <div class="vip-terminal__column">
+                                <span>за телефоном:</span>
+                                <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                <span>Viber / WhatsApp:</span>
+                                <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                <span>або відправивши листа на email:</span>
+                                <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-spacer"></div>
+            </section>
+            <!-- Hover-links -->
+            <div class="import">
+                <!-- Hover-links -->
+                @@include('html/hover-slider.html')
+            </div>
+        </main>
+        <!-- Footer -->
+        @@include('html/footer.html')
+
+</body>
+
+</html>

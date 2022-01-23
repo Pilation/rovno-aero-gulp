@@ -1,0 +1,33 @@
+@import "_null.scss";
+@import "_fonts.scss";
+@import "_slick-theme.scss";
+@import "_slick.scss";
+@import "_sliders.scss";
+@import "_main-same.scss";
+@import "_header-container-same.scss";
+@import "_pages-buttons-footer.scss";
+@import "_header-dark.scss";
+
+//! Color
+.wrapper {
+    background-image: none;
+    background-color: $white;
+}
+
+//! Unique
+.partners-rent {
+    & p,
+    & h2 {
+        font-size: $f17;
+        line-height: $f24;
+        color: $lightGrey;
+        margin: 20px 0;
+    }
+    & h2 {
+        font-weight: bold;
+    }
+}
+
+.grey-button {
+    margin: 24px 0;
+}

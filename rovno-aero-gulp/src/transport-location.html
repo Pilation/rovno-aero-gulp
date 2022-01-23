@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Transport-location"
+})
+<link rel="stylesheet" href="css/transport-location.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        @@include('html/header.html')
+        <!-- main -->
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li>
+                            <a href="/">Головна</a>
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Транспорт
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Оренда авто
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="location">
+                <div class="container">
+                    <h1 class="section-title">Як дістатися</h1>
+                    <p>
+                        Міжнародний аеропорт "Одеса" розташований в південно-західній частині міста за 7,5 км від
+                        центру.
+                    </p>
+                    <div class="location__box">
+
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.662906991275!2d26.150522360513456!3d50.59621847746684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f6d08b0d0993b%3A0x3469f6dfd2a9204c!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LDRjdGA0L7Qv9C-0YDRgiDQoNC-0LLQvdC-!5e0!3m2!1sru!2sua!4v1639492452369!5m2!1sru!2sua"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="section-spacer"></div>
+            </section>
+            <!-- Hover links -->
+            <div class="import">
+                <!-- Hover-links -->
+                @@include('html/hover-slider.html')
+            </div>
+        </main>
+        <!-- Footer -->
+        @@include('html/footer.html')
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "Contacts"
+})
+<link rel="stylesheet" href="css/contacts.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('html/header.html')
+        <div class="background">
+            <img data-src="./img/contacts-bg.png" class="lazy" alt="img">
+        </div>
+        <!-- main -->
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li>
+                            <a href="/">Головна</a>
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Про нас
+                        </li>
+                        <li>
+                            <span class="icon-arrr"></span>
+                            Контакти
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="contacts">
+                <div class="container">
+                    <h1 class="section-title">Контакти</h1>
+                    <p class="contacts__description">
+                        Міжнародний Аеропорт <strong>Рівне</strong>
+                        <span>вулиця Авіаторів, 5 А, Велика Омеляна, Рівненська область, 35360</span>
+                    </p>
+                    <div class="contacts__box">
+                        <div class="contacts__right">
+                            <div class="contacts__text">
+                                <h2>Прес-служба</h2>
+                                <p>
+                                    Щоб отримати офіційні коментарі від прес-служби аеропорту "Рівне" та уточнити
+                                    порядок
+                                    організації фото- чи відеозйомки, звертайтеся за телефонами або надішліть
+                                    електронного листа за адресою info@rivne.aero
+                                </p>
+                                <p>
+                                    Журналістські запити в письмовому вигляді слід оформлювати таким чином:
+                                </p>
+                                <p>
+                                    чітко сформулюйте тему, список питань та залиште свої контактні дані;
+                                    оформіть запит на фірмовому бланку редакції/телекомпанії з печаткою та підписом
+                                    вашого
+                                    керівника.
+                                    Прес-служба аеропорту розгляне ваш запит та дасть відповідь протягом 5 робочих днів.
+                                    Якщо ви
+                                    піднімаєте питання, розгляд яких вимагає обробки великого об'єму даних, то термін
+                                    надання
+                                    відповіді може продовжитися до 20 робочих днів.
+                                </p>
+                            </div>
+                            <div class="social-media">
+                                <a href="javascript:void(0);" class="social-media__card social-media__card_facebook">
+                                    <span class="icon-facebook"></span>
+                                    <span class="social-media__title">Facebook</span>
+                                </a>
+                                <a href="javascript:void(0);" class="social-media__card social-media__card_instagram">
+                                    <span class="icon-instagram"></span>
+                                    <span class="social-media__title">Instagram</span>
+                                </a>
+                                <a href="javascript:void(0);" class="social-media__card social-media__card_twitter">
+                                    <span class="icon-twitter"></span>
+                                    <span class="social-media__title">Twitter</span>
+                                </a>
+                                <a href="javascript:void(0);" class="social-media__card social-media__card_linkedin">
+                                    <span class="icon-linkedin"></span>
+                                    <span class="social-media__title">LinkedIn</span>
+                                </a>
+                                <a href="javascript:void(0);" class="social-media__card social-media__card_youtube">
+                                    <span class="icon-youtube"></span>
+                                    <span class="social-media__title">Youtube</span>
+                                </a>
+                            </div>
+                            <div class="info-form">
+                                <h2>
+                                    Щоб отримати інформацію щодо оренди, заповніть форму, і ми з вами зв’яжемося
+                                </h2>
+                                @@include('html/contacts-form.html')
+                            </div>
+                        </div>
+                        <div class="contacts__left">
+                            <div class="contacts-card">
+                                <h3>Прес-служба:</h3>
+                                <div class="contacts-card__column">
+                                    <span>Телефон:</span>
+                                    <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                    <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                    <span>Viber / WhatsApp:</span>
+                                    <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                    <span>Email:</span>
+                                    <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                                </div>
+                            </div>
+                            <div class="contacts__left">
+                                <div class="contacts-card contact-card_red">
+                                    <h3>Інформаційний центр</h3>
+                                    <div class="contacts-card__column">
+                                        <span>Телефон:</span>
+                                        <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                        <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                        <span>Viber / WhatsApp:</span>
+                                        <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                        <span>Email:</span>
+                                        <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                                    </div>
+                                </div>
+                                <div class="contacts-card">
+                                    <h3>Прес-служба:</h3>
+                                    <div class="contacts-card__column">
+                                        <span>Телефон:</span>
+                                        <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                        <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                        <span>Viber / WhatsApp:</span>
+                                        <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                        <span>Email:</span>
+                                        <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                                    </div>
+                                </div>
+                                <div class="contacts__left">
+                                    <div class="contacts-card contact-card_red">
+                                        <h3>Інформаційний центр</h3>
+                                        <div class="contacts-card__column">
+                                            <span>Телефон:</span>
+                                            <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                            <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                            <span>Viber / WhatsApp:</span>
+                                            <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                            <span>Email:</span>
+                                            <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                                        </div>
+                                    </div>
+                                    <div class="contacts-card">
+                                        <h3>Прес-служба:</h3>
+                                        <div class="contacts-card__column">
+                                            <span>Телефон:</span>
+                                            <a href="tel:+380482372571">+38 (048) 237-25-71</a>
+                                            <a href="tel:+380482393582">+38 (048) 239-35-82</a>
+                                            <span>Viber / WhatsApp:</span>
+                                            <a href="tel:+380670002571">+38 (067) 000-25-71</a>
+                                            <span>Email:</span>
+                                            <a href="rivnevip@gmail.com">rivnevip@gmail.co</a>
+                                        </div>
+                                    </div>
+                                    <div class="news-more-card">
+                                        <h3>Читайте наші новини</h3>
+                                        <button type="button" class="grey-button red-button">Детальніше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-spacer"></div>
+
+            </section>
+            <div class="import">
+                <!-- Hover-links -->
+                @@include('html/hover-slider.html')
+            </div>
+        </main>
+        <!-- Footer -->
+        @@include('html/footer.html')
+</body>
+
+</html>

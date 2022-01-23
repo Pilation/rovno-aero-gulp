@@ -1,0 +1,180 @@
+@import "_null.scss";
+@import "_fonts.scss";
+@import "_slick-theme.scss";
+@import "_slick.scss";
+@import "_sliders.scss";
+@import "_main-same.scss";
+@import "_header-container-same.scss";
+@import "_pages-buttons-footer.scss";
+
+//! Changed color
+.breadcrumbs {
+    color: $white;
+    & a {
+        color: $white;
+    }
+    & span::before {
+        color: $white;
+    }
+}
+.section-title {
+    color: $white;
+}
+//! Changed color
+
+.background {
+    background-image: url(../img/VIP-services-bg.jpg);
+}
+
+.vip-terminal {
+    &__description {
+        color: $white;
+        font-size: $f17;
+        line-height: $f24;
+        max-width: 610px;
+        padding-bottom: 24px;
+    }
+
+    &__small-title {
+        font-size: $f16;
+        color: $grey;
+        font-weight: bold;
+        padding: 32px;
+    }
+
+    &__header {
+        margin-top: 14px;
+        width: 100%;
+        background-color: $white;
+        border-radius: 4px;
+    }
+
+    &__main {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    &__also {
+        min-width: 280px;
+        flex: 1 1 18%;
+        border-radius: 4px;
+        background-color: $white;
+    }
+
+    &__contacts {
+        min-width: 280px;
+        flex: 1 1 18%;
+        border-radius: 4px;
+        background-color: $rivne-red;
+        align-self: flex-start;
+        & .vip-terminal__small-title {
+            color: $white;
+        }
+        & .vip-terminal__column {
+            & span {
+                color: #ffffffb3;
+            }
+            & a {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__order-service {
+        min-width: 350px;
+        flex: 1 1 50%;
+        background-color: $white;
+        border-radius: 4px;
+        padding: 0 32px 32px;
+        align-self: flex-start;
+        & h2 {
+            font-size: $f28;
+            font-weight: bold;
+            margin: 32px 0 10px;
+            &:last-of-type {
+                margin: 20px 0;
+            }
+        }
+        & span {
+            padding: 10px 0;
+        }
+        & select {
+            appearance: none;
+            border: 1px solid #22222233;
+            outline: 0;
+            width: 100%;
+            padding: 15px;
+            background: url(../img/arrdown.svg) no-repeat right 10px center;
+            background-size: 20px 20px;
+            color: $grey;
+            border-radius: 4px;
+            box-shadow: 0 0 5px 0 #22222233;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &::-ms-expand {
+                display: none;
+            }
+        }
+    }
+
+    &__row {
+        font-size: $f15;
+        color: $lightGrey;
+        padding: 0 32px 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__column {
+        flex: 1 1 25%;
+        font-size: $f15;
+        color: $lightGrey;
+        padding: 0 32px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        & .vip-terminal__item {
+            min-height: 0;
+        }
+    }
+
+    &__item {
+        min-width: 220px;
+        min-height: 80px;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        & span {
+            color: $rivne-red;
+            font-size: $f20;
+        }
+        & p {
+            max-width: 200px;
+        }
+    }
+}
+
+.red-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .vip-terminal {
+        &__description {
+            padding-bottom: 115px;
+        }
+    }
+}

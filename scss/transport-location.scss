@@ -1,0 +1,30 @@
+@import "_null.scss";
+@import "_fonts.scss";
+@import "_slick-theme.scss";
+@import "_slick.scss";
+@import "_sliders.scss";
+@import "_main-same.scss";
+@import "_header-container-same.scss";
+@import "_pages-buttons-footer.scss";
+@import "_header-dark.scss";
+
+//! Color
+.wrapper {
+    background-image: none;
+}
+
+.location {
+    & p {
+        font-size: $f17;
+        line-height: $f24;
+        color: $lightGrey;
+        max-width: 500px;
+        margin: 24px 0;
+    }
+    iframe {
+        width: 100%;
+        height: 450px;
+        border: 2px solid #eee;
+        border-radius: 4px;
+    }
+}

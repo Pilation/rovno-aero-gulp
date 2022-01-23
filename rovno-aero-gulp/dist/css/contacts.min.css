@@ -1,0 +1,114 @@
+.header__list li:nth-child(10) .header__link {
+  position: relative;
+}
+.header__list li:nth-child(10) .header__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 7px 40px;
+  border-color: transparent transparent #ff0000 transparent;
+}
+
+@media (max-width: 1024px) {
+  .header__list li:nth-child(10) .header__link {
+    font-weight: bold;
+    position: relative;
+  }
+  .header__list li:nth-child(10) .header__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    width: 3px;
+    height: 90%;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    background: #ff0000;
+  }
+}
+.breadcrumbs {
+  color: #fff;
+}
+.breadcrumbs a {
+  color: #fff;
+}
+.breadcrumbs span::before {
+  color: #fff;
+}
+
+.section-title {
+  color: #fff;
+}
+
+.wrapper {
+  background-image: none;
+}
+
+.contacts__description {
+  color: #fff;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  max-width: 610px;
+  padding-bottom: 50px;
+}
+.contacts__box {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.contacts__right {
+  flex: 1 1 65%;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contacts__left {
+  flex: 1 1 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contacts__text h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  color: #222;
+}
+.contacts__text p {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #444;
+  margin: 20px 0;
+}
+
+.info-form {
+  background-color: #fff;
+  padding: 24px 24px 0 24px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 1024px) {
+  .contacts__description {
+    padding-bottom: 140px;
+  }
+}

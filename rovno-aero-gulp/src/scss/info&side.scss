@@ -1,0 +1,202 @@
+@import "_header-dark.scss";
+
+//! Current
+.header__list li:nth-child(2) .header__link {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 10;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 40px 7px 40px;
+        border-color: transparent transparent $rivne-red transparent;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__list li:nth-child(2) .header__link {
+        font-weight: bold;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10px;
+            width: 3px;
+            height: 90%;
+            border: none;
+            border-radius: 2px 0 0 2px;
+            background: $rivne-red;
+        }
+    }
+}
+
+//! Color
+.wrapper {
+    background-image: none;
+    background-color: $white;
+}
+
+//! Unique
+.info-aside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+.side-menu {
+    flex: 1 1 15%;
+    align-self: flex-start;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    position: sticky;
+    top: 80px;
+
+    &__box {
+        background-color: #dbdee640;
+        border-radius: 4px;
+    }
+
+    &__title {
+        width: 100%;
+        padding: 24px;
+        font-size: $f16;
+        line-height: $f17;
+        font-weight: bold;
+        color: $grey;
+        border-bottom: 1px solid #e6e6e6;
+        & span {
+            display: inline-block;
+            &::before {
+                font-size: 14px;
+                color: $grey;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__ancors {
+        padding: 24px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__ancor {
+        color: $veryLightGrey;
+        font-size: $f15;
+        line-height: $f16;
+    }
+
+    &__link {
+        padding: 24px;
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            border: 6px solid transparent;
+            border-top: 6px solid #dbdee6;
+            border-right: 6px solid #dbdee6;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__small-title {
+        font-size: $f15;
+        font-weight: bold;
+        color: $grey;
+        margin-bottom: 10px;
+    }
+
+    &__small-description {
+        font-size: $f13;
+        color: #9b9b9b;
+        line-height: $f15;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.main-info {
+    flex: 1 1 60%;
+    min-width: 350px;
+}
+.article {
+    color: $lightGrey;
+    font-size: $f17;
+    line-height: $f18;
+    margin-bottom: 65px;
+    hyphens: auto;
+    width: 90%;
+    &__title {
+        font-size: $f18;
+        color: $grey;
+        font-weight: bold;
+        margin: 40px 0 16px 0;
+    }
+    &__title-small {
+        color: $grey;
+        font-weight: bold;
+        margin: 16px 0;
+    }
+
+    &__text {
+        margin: 25px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8px;
+        & li {
+            padding-left: 24px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $grey;
+            }
+        }
+    }
+    & a {
+        color: $lightGrey;
+    }
+}
+
+@media (max-width: 1024px) {
+    .side-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

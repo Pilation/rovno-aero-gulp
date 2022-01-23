@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html', {
+"title": "Main"
+})
+<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        @@include('html/header.html')
+        <!-- header-slider -->
+        <div class="slider-container">
+            <div class="header-slider">
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider1.png" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Подорожуйте з Рівного з Qatar Airways
+                        </strong>
+                        <p>
+                            З 9 грудня скористайтеся 3 щотижневими рейсами в Доху
+                            і продовжуйте подорож далі у понад 140 міст
+                        </p>
+                        <u>
+                            Забронювати
+                        </u>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider2.jpg" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Рівне - Рига
+                        </strong>
+                        <p>
+                            Два рейси на тиждень у зимовому сезоні
+                        </p>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider3.png" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Абу-Дабі та EXPO 2020 на крилах Wizz Air
+                        </strong>
+                        <p>
+                            Вже зараз щочетверга, з 19 грудня - щочетверга та
+                            щонеділі
+                        </p>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider4.png" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Рейси Bees Airline з Рівного до Києва,
+                        </strong>
+                        <p>
+                            Гянджі, Еревана, Праги та Тбілісі
+                        </p>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider5.jpg" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            У Міжнародному аеропорту “Рівне” відкрито нову
+                            злітно-посадкову смугу
+                        </strong>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider6.png" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Щоденні рейси МАУ з Рівного до Києва
+                        </strong>
+                        <p>
+                            та міжнародні напрямки
+                        </p>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider7.jpg" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            До літа на крилах Flydubai
+                        </strong>
+                        <p>
+                            Вже зараз до Дубай чотири рази на тиждень
+                        </p>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider8.png" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Страховий поліс для в'їзду іноземних громадян
+                        </strong>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider9.jpg" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            Правила перебування в аеропорту "Рівне"
+                        </strong>
+                    </a>
+                </div>
+                <div class="header-slider__item">
+                    <img class="lazy" data-src="./img/header-slider/header-slider10.jpg" alt="img">
+                    <a href="/" class="header-slider__link">
+                        <strong>
+                            ПЛР-тестування в аеропорту "Рівне"
+                        </strong>
+                        <u>Детальніше</u>
+                    </a>
+                </div>
+            </div>
+            <div class="header-slider__navigation">
+                <div class="header-slider__dots"></div>
+                <div class="header-slider__arrows"></div>
+            </div>
+        </div>
+        <!-- main -->
+        <main class="main">
+            <!-- Header-slider -->
+            @@include('html/hover-slider.html')
+            <!-- news -->
+            <section class="news">
+                <div class="container">
+                    <div class="news__box">
+                        <div class="news__description section-description">
+                            <h2 class="section-description__title">
+                                Новини
+                            </h2>
+                            <a href="./news.html" class="section-description__link grey-button">
+                                Усі новини
+                            </a>
+                        </div>
+                        <div class="news__list">
+                            <a href="./news-article.html" class="news-card">
+                                <h4 class="news-card__title">
+                                    ​Аеропорт “Рівне” вітає Qatar Airways, найкращу авіакомпанію світу за версією
+                                    Skytrax
+                                </h4>
+                                <div class="news-card__img">
+                                    <img data-src="./img/News/news-card-main-BG.png" class="lazy" alt="img">
+                                </div>
+                                <div class="news-card__info">
+                                    <span class="grey-button news-card__tag">
+                                        Новини
+                                    </span>
+                                    <span class="news-card__date">
+                                        <span class="icon-clock"></span>
+                                        25.10.2021
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./news-article.html" class="news-card">
+                                <h4 class="news-card__title">
+                                    ​Аеропорт “Рівне” вітає Qatar Airways, найкращу авіакомпанію світу за версією
+                                    Skytrax
+                                </h4>
+                                <div class="news-card__img">
+                                    <img data-src="./img/News/news-card-main-BG.png" class="lazy" alt="img">
+                                </div>
+                                <div class="news-card__info">
+                                    <span class="grey-button news-card__tag">
+                                        Новини
+                                    </span>
+                                    <span class="news-card__date">
+                                        <span class="icon-clock"></span>
+                                        25.10.2021
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./news-article.html" class="news-card">
+                                <h4 class="news-card__title">
+                                    ​Аеропорт “Рівне” вітає Qatar Airways, найкращу авіакомпанію світу за версією
+                                    Skytrax
+                                </h4>
+                                <div class="news-card__img">
+                                    <img data-src="./img/News/news-card-main-BG.png" class="lazy" alt="img">
+                                </div>
+                                <div class="news-card__info">
+                                    <span class="grey-button news-card__tag">
+                                        Новини
+                                    </span>
+                                    <span class="news-card__date">
+                                        <span class="icon-clock"></span>
+                                        25.10.2021
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="./news-article.html" class="news-card">
+                                <h4 class="news-card__title">
+                                    ​Аеропорт “Рівне” вітає Qatar Airways, найкращу авіакомпанію світу за версією
+                                    Skytrax
+                                </h4>
+                                <div class="news-card__img">
+                                    <img data-src="./img/News/news-card-main-BG.png" class="lazy" alt="img">
+                                </div>
+                                <div class="news-card__info">
+                                    <span class="grey-button news-card__tag">
+                                        Новини
+                                    </span>
+                                    <span class="news-card__date">
+                                        <span class="icon-clock"></span>
+                                        25.10.2021
+                                    </span>
+                                </div>
+                            </a>
+                            @@include('html/subscription-form.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- advertisement -->
+            <section class="advertisement">
+                <div class="container">
+                    <div class="advertisement__box">
+                        <div class="advertisement__description section-description">
+                            <h2 class="section-description__title">
+                                Реклама від партнерів
+                            </h2>
+                            <a href="./partners-rent.html" class="section-description__link grey-button">
+                                Стати партнером
+                            </a>
+                        </div>
+                        <div class="advertisement__list">
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv1.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv2.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv3.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv4.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv5.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv6.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv7.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                            <a href="javascript:void(0);" class="advertisement__link-outside">
+                                <img data-src="./img/advertisement/adv1.jpg" alt="img"
+                                    class="advertisement__picture lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="section-spacer"></div>
+        </main>
+        <!-- Footer -->
+        @@include('html/footer.html')
+</body>
+
+</html>

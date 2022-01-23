@@ -1,0 +1,138 @@
+@import "_null.scss";
+@import "_fonts.scss";
+@import "_slick-theme.scss";
+@import "_slick.scss";
+@import "_sliders.scss";
+@import "_main-same.scss";
+@import "_header-container-same.scss";
+@import "_pages-buttons-footer.scss";
+@import "_header-dark.scss";
+
+//! Unique
+
+.airlines {
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &__left,
+    &__right {
+        flex: 1 1 49%;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    &__card {
+        width: 100%;
+        background-color: $white;
+        border-radius: 10px;
+        min-width: 350px;
+    }
+
+    &__header {
+        color: $grey;
+        padding: 30px 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        & h2 {
+            font-size: $f16;
+            line-height: $f18;
+        }
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    &__logo {
+        width: 150px;
+        min-height: 40px;
+        background-image: url(../img/image-loader.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        & img {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    &__more,
+    &__less {
+        transition: all 0.5s;
+        width: 100%;
+        font-size: $f15;
+        padding: 16px 32px;
+        color: $veryLightGrey;
+        & .icon-arrr {
+            margin-left: 10px;
+            display: inline-block;
+            transform-origin: center;
+            transform: rotate(90deg);
+            font-size: $f13;
+            &::before {
+                padding-left: 5px;
+            }
+        }
+        & .icon-arrl {
+            margin-left: 10px;
+            display: inline-block;
+            transform-origin: center;
+            transform: rotate(90deg);
+            font-size: $f13;
+            &::before {
+                padding-left: 5px;
+            }
+        }
+    }
+    &__less {
+        background-color: #dbdee640;
+    }
+}
+.airline {
+    visibility: hidden;
+    height: fit-content;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.5s, max-height 1s;
+    &.more {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s, max-height 1s;
+    }
+    &__box {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__info {
+        flex: 1 1 48%;
+        font-size: $f15;
+        & span {
+            margin-bottom: 5px;
+            color: $veryLightGrey;
+        }
+        & a {
+            margin-bottom: 5px;
+            text-decoration: underline;
+            color: $veryLightGrey;
+        }
+    }
+    &__title {
+        color: $grey;
+        margin-bottom: 10px;
+    }
+}

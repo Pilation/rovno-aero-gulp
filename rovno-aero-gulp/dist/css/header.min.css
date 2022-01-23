@@ -1,0 +1,419 @@
+.header {
+  position: fixed;
+  transition: all 0.5s;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-size: 0.975rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(64px);
+}
+.header__upper-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+  gap: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.header__logo {
+  height: 40px;
+  width: 151px;
+  background-image: url(../img/logo-rivne.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.header__burger {
+  display: none;
+  margin-left: auto;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  z-index: 50;
+}
+.header__burger span {
+  position: absolute;
+  background: #222;
+  border-radius: 2px;
+  top: 13px;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease 0s;
+  background-color: #ff0000;
+}
+.header__burger::before, .header__burger::after {
+  content: "";
+  position: absolute;
+  background: #222;
+  background-color: #ff0000;
+  border-radius: 2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease 0s;
+}
+.header__burger:before {
+  top: 0;
+}
+.header__burger:after {
+  bottom: 0;
+}
+.header__burger.active span {
+  transform: scale(0);
+}
+.header__burger.active:before {
+  transform: rotate(45deg);
+  background-color: #222;
+  top: 13px;
+}
+.header__burger.active:after {
+  transform: rotate(-45deg);
+  background-color: #222;
+  top: 13px;
+}
+.header__border {
+  height: 40px;
+  width: 1px;
+  background-color: #eeeeee4d;
+}
+.header__language {
+  cursor: pointer;
+  margin-left: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+.header__menu {
+  height: 60px;
+  border-top: 1px solid #eeeeee4d;
+  border-bottom: 1px solid #ff0000;
+  font-weight: 400;
+  line-height: 60px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+}
+.header__link {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.time-date {
+  display: flex;
+  flex-direction: row;
+}
+.time-date__description {
+  margin-right: 20px;
+}
+.time-date__box span {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.header-dropdown {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  width: 100%;
+  padding: 32px 0;
+  background-color: #fff;
+  height: fit-content;
+  visibility: hidden;
+}
+.header-dropdown__box {
+  position: relative;
+}
+.header-dropdown__list {
+  padding-left: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 220px));
+  gap: 24px;
+}
+.header-dropdown__link {
+  line-height: normal;
+  font-size: 0.975rem;
+  color: #444;
+}
+.header-dropdown__link_inactive {
+  color: #777;
+}
+
+.language {
+  display: none;
+  height: fit-content;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .header__link {
+    transition: all 0.5s ease;
+  }
+  .header__link:hover {
+    transition: all 1s ease;
+    color: #ff0000;
+    opacity: 1;
+  }
+  .header .header-dropdown__link {
+    position: relative;
+  }
+  .header .header-dropdown__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -19px;
+    width: 14px;
+    height: 11px;
+    background-image: url(../img/arrw.svg);
+    background-size: 14px 11px;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .header .header-dropdown__link:hover::before {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+  .header .header-dropdown__link_inactive {
+    pointer-events: none;
+  }
+}
+@media (max-width: 1400px) {
+  .header-dropdown__list {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    backdrop-filter: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__language {
+    display: none;
+  }
+  .header__upper-box {
+    height: 50px;
+    gap: 10px;
+  }
+  .header__menu {
+    line-height: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    visibility: hidden;
+    height: fit-content;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .header__menu.active {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    max-height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .header__list li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .header__list li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .header__link {
+    color: #222;
+    opacity: 0.7;
+    width: 100%;
+  }
+  .header__item_dropdown {
+    position: relative;
+  }
+  .header__item_dropdown::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    border: 7px solid transparent;
+    border-left: 7px solid #ff0000;
+    transform-origin: center center;
+    transition: all 0.5s;
+  }
+  .header__item_dropdown.more::after {
+    transform: rotate(90deg);
+  }
+  .header__item_dropdown.more .header-dropdown {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s;
+  }
+  .header__logo {
+    background-image: url(../img/logo-rivne-black.svg);
+  }
+
+  .header-dropdown {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #eef2f4;
+    border-radius: 4px;
+    visibility: hidden;
+    height: fit-content;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .header-dropdown__box {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-dropdown__list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 16px;
+  }
+  .header-dropdown__link {
+    max-width: 220px;
+    line-height: normal;
+    font-size: 1.0625rem;
+    color: #444;
+  }
+  .header-dropdown__link_inactive {
+    color: #777;
+  }
+
+  .time-date {
+    flex-direction: column;
+    color: #444;
+  }
+  .time-date__description {
+    display: none;
+  }
+  .time-date__box span {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .language {
+    border-top: 5px solid #eee;
+    background-color: #fff;
+    padding: 0 2.5%;
+    display: block;
+    height: 80px;
+    max-height: 200px;
+    opacity: 1;
+    transition: all 0.5s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+  }
+  .language .header__language {
+    display: block;
+    color: #222;
+  }
+}
+@media (max-width: 410px) {
+  .time-date {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .header:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+  }
+
+  .header.fixed:before {
+    position: fixed;
+    top: 60px;
+  }
+
+  .header__item_dropdown:hover .header-dropdown {
+    visibility: visible;
+  }
+
+  .header.white {
+    color: #222;
+    backdrop-filter: none;
+    background-color: #fff;
+  }
+  .header.white .header__logo {
+    background-image: url(../img/logo-rivne-black.svg);
+  }
+  .header.white .header__language {
+    color: #222;
+  }
+  .header.white .header__menu {
+    border-top: 1px solid #eeeeee4d;
+  }
+  .header.white .header__menu .header__link {
+    color: #222;
+    opacity: 0.7;
+  }
+  .header.white .header__link {
+    color: #222;
+  }
+}
