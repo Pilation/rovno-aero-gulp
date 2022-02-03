@@ -1,0 +1,44 @@
+.wrapper {
+  background-image: none;
+}
+
+.empty-page {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.empty-page__box {
+  position: absolute;
+  width: fit-content;
+  max-width: 300px;
+  height: fit-content;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.empty-page__logo {
+  height: auto;
+  width: fit-content;
+}
+.empty-page__logo svg {
+  width: 100%;
+  height: auto;
+  max-width: 275px;
+}
+.empty-page p {
+  font-size: 1.125rem;
+  text-align: center;
+}
+.empty-page__button {
+  background-color: #ff0000;
+}
+.empty-page__button a {
+  width: 100%;
+  height: 100%;
+  font-size: 0.975rem;
+  color: #fff;
+}
